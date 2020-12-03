@@ -16,13 +16,16 @@
         width: calc(100vw - 20px);
         border: 10px solid red;
         display: flex;
+        /* Solution 1: change direction to column */
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
       }
 
       .container > .img_blocks {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        /* Solution 2:
+        align-self: center; */
       }
     </style>
   </head>
